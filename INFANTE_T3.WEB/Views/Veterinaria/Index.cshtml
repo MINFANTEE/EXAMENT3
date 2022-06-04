@@ -1,0 +1,39 @@
+﻿<div>
+    <h1 id="TestNuevNota">Veterinarias</h1>
+    
+    <a href="/veterinaria/crear?Id=@ViewBag.Id">Nuevas Veterinaria</a>
+
+    <table class="table">
+        <tr>
+            <th>NombreMascota </th>
+            <th>sexo </th>
+            <th></th>
+        </tr>
+
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NombreMascota</td>
+                <td>@item.sexo</td>
+                <td>@item.Especie</td>
+                <td>@item.Raza</td>
+                <td>@item.Tamano</td>
+                <td>@item.DatosParticulares </td>
+                <td>@item.NombreDueno </td>
+                <td>@item.DireccionDueno </td>
+                <td>@item.Telefono  </td>
+                <td>@item.Email</td>          
+                
+                <td>
+
+                    <a href="/nota/editar?Id=@item.Id">Editar</a>
+                    <a href="/nota/delete?Id=@item.Id">Eliminar</a>
+                </td>
+            </tr>
+        }
+
+        </tbody>
+    </table>
+
+</div>

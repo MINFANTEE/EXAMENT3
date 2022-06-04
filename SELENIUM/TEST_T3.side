@@ -1,0 +1,162 @@
+{
+  "id": "b7cd0be3-6413-431f-ba21-aec3ee14f505",
+  "version": "2.0",
+  "name": "TEST_T3",
+  "url": "https://localhost:7159/",
+  "tests": [{
+    "id": "5cc03fe5-4377-4e34-be1b-0cd4dbde33f4",
+    "name": "Nueva_Veterinaria",
+    "commands": [{
+      "id": "7c40dac1-a48b-47ae-aac5-88b01556cc20",
+      "comment": "",
+      "command": "open",
+      "target": "/veterinaria/index",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "506e8e87-e3b2-4294-ae7a-bb13a0b03766",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevas Veterinaria",
+      "targets": [
+        ["linkText=Nuevas Veterinaria", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevas Veterinaria')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/veterinaria/crear?Id=')]", "xpath:href"],
+        ["xpath=//main/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevas Veterinaria')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a2a573b-980e-46b4-b802-1e36844bb48e",
+      "comment": "",
+      "command": "type",
+      "target": "name=NombreMascota ",
+      "targets": [
+        ["name=NombreMascota ", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='NombreMascota ']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Minino"
+    }, {
+      "id": "95b988b1-2b1a-483e-ae7a-2a057279f420",
+      "comment": "",
+      "command": "type",
+      "target": "name=sexo ",
+      "targets": [
+        ["name=sexo ", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='sexo ']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "hembra"
+    }, {
+      "id": "eaa4b09c-3a59-4430-9013-fef51169bf4b",
+      "comment": "",
+      "command": "type",
+      "target": "name=Especie",
+      "targets": [
+        ["name=Especie", "name"],
+        ["css=input:nth-child(6)", "css:finder"],
+        ["xpath=//input[@name='Especie']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "carnivoro"
+    }, {
+      "id": "e2a91b28-09b9-4810-9a1c-769d409ca709",
+      "comment": "",
+      "command": "type",
+      "target": "name=Raza",
+      "targets": [
+        ["name=Raza", "name"],
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='Raza']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "bels"
+    }, {
+      "id": "11a236c8-660d-412c-b305-cbe38534aac7",
+      "comment": "",
+      "command": "type",
+      "target": "name=Tamano  ",
+      "targets": [
+        ["name=Tamano  ", "name"],
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@name='Tamano  ']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "mediano"
+    }, {
+      "id": "b2bd72a8-e80d-4f3d-8a0e-9153eaab2159",
+      "comment": "",
+      "command": "type",
+      "target": "name=DatosParticulares",
+      "targets": [
+        ["name=DatosParticulares", "name"],
+        ["css=input:nth-child(12)", "css:finder"],
+        ["xpath=//input[@name='DatosParticulares']", "xpath:attributes"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": "pintado"
+    }, {
+      "id": "07062d15-e47a-4643-8095-e4436d177193",
+      "comment": "",
+      "command": "type",
+      "target": "name=NombreDueno",
+      "targets": [
+        ["name=NombreDueno", "name"],
+        ["css=input:nth-child(14)", "css:finder"],
+        ["xpath=//input[@name='NombreDueno']", "xpath:attributes"],
+        ["xpath=//input[7]", "xpath:position"]
+      ],
+      "value": "Juan"
+    }, {
+      "id": "4e15c516-f8d4-47e8-8342-3a6b54ed1ac9",
+      "comment": "",
+      "command": "type",
+      "target": "name=DireccionDueno ",
+      "targets": [
+        ["name=DireccionDueno ", "name"],
+        ["css=input:nth-child(16)", "css:finder"],
+        ["xpath=//input[@name='DireccionDueno ']", "xpath:attributes"],
+        ["xpath=//input[8]", "xpath:position"]
+      ],
+      "value": "alamos"
+    }, {
+      "id": "d4ed9e9e-5c02-4465-9106-c8952c9c85bb",
+      "comment": "",
+      "command": "type",
+      "target": "name=Telefono",
+      "targets": [
+        ["name=Telefono", "name"],
+        ["css=input:nth-child(18)", "css:finder"],
+        ["xpath=//input[@name='Telefono']", "xpath:attributes"],
+        ["xpath=//input[9]", "xpath:position"]
+      ],
+      "value": "969565877"
+    }, {
+      "id": "6c740fb5-b9bc-485f-a309-0a35c901d968",
+      "comment": "",
+      "command": "type",
+      "target": "name=Email  ",
+      "targets": [
+        ["name=Email  ", "name"],
+        ["css=input:nth-child(20)", "css:finder"],
+        ["xpath=//input[@name='Email  ']", "xpath:attributes"],
+        ["xpath=//input[10]", "xpath:position"]
+      ],
+      "value": "juna@hotmailñ.com"
+    }]
+  }],
+  "suites": [{
+    "id": "53afea55-9f2e-48b5-8693-b284a2bad365",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5cc03fe5-4377-4e34-be1b-0cd4dbde33f4"]
+  }],
+  "urls": ["https://localhost:7159/"],
+  "plugins": []
+}
